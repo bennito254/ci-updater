@@ -22,3 +22,6 @@ $updater = new Updater;
 $update_details = $updater->check_system_updates();
 print_r($update_details);
 ```
+
+# TODO
+Database updates - Codeigniter specific
