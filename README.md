@@ -20,4 +20,5 @@ Edit Updater.php, set up $this->update_url to point to your update.json in your 
 ```
 $updater = new Updater;
 $update_details = $updater->check_system_updates();
+print_r($update_details);
 ```
