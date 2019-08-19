@@ -138,6 +138,11 @@ class Updater {
                                 //strip temp path from the file link
                                 $file = explode($temp_dir.'/'.$timestamp.'/', $file_or_folder)[1];
                                 
+                                //Create directory if not exists to avoid negative results in file_exists
+                                if(is_dir($file_or_folder) && !file_exists($this->FCPATH.$file)){
+                                    mkdir($this->FCPATH.$file, 0777);
+                                }
+                                
                                 if ( file_exists($this->FCPATH.$file) && is_dir($this->FCPATH.$file) ) {
                                     //Skip replacing directories
                                 } else {
