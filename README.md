@@ -38,11 +38,11 @@ NB: This Updater.php script does not execute any methods/functions in the `setup
 Example setup.php
 ```
 //Save as setup.php in the root directory of your update.zip
-function show message() {
+function show\_message() {
     echo "This is an example.";
 }
 
-show message();
+show\_message();
 ```
 ## Contribution
 Contributions are highly welcome.
